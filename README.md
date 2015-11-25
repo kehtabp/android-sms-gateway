@@ -26,7 +26,7 @@ require 'mechanize'
 
 @agent.post 'https://android.googleapis.com/gcm/send',
                           {
-                              'registration_id' => 'YOUR REGISTRATION ID VALUE',
+                              'registration_id' => ['YOUR REGISTRATION ID VALUE'],
                               'data.message' => 'YOUR MESSAGE HERE',
                               'data.number' => 'DESTINATION PHONE NUMBER HERE'
                           },
